@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .logo {
+            width: 50%;
+        }
+
+        .nav {
+            font-size: x-large;
+        }
+
+        .topic {
+            letter-spacing: 5px;
+        }
+
+        .desc {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .hero-section {
+            color: white;
+            background-position: 0px 0px, 50% 50%;
+            background-size: auto, cover;
+            background-image: linear-gradient(180deg, rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22)), url(./img/hero-bg.jpg);
+            border-bottom: 4px solid #69b9ff;
+        }
+
+        .hero-section2 {
+            color: steelblue;
+            background-color: transparent;
+        }
+
+        .product-div {
+            width: 70%;
+            margin-bottom: 32px;
+        }
+
+        .product-card {
+            color: steelblue;
+            margin: 16px;
+            padding: 32px;
+        }
+
+        .product-img-section {
+            background-color: rgba(46, 157, 255, 0.7);
+            border-radius: 2cm;
+            margin: 10%;
+        }
+
+        .product-img {
+            width: 100%;
+            padding: 8px;
+        }
+
+        .service-div {
+            background-color: rgba(46, 157, 255, 0.7);
+            padding: 32px 10% 0 10%;
+        }
+
+        .service-card{
+            color:white;
+            margin: 8px;
+            padding: 0 32px;
+        }
+        
+        .service-img{
+            width: 80%;
+            padding: 8px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-xl">
+            <a class="navbar-brand" href="#"><img src="./img/Logo.png" class="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="nav justify-content-end">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid hero-section text-center text-uppercase"
+        style="height:40vh; display: flex; align-items: center;">
+        <div class="container">
+            <h1 class="display-3 topic">This is ice factory</h1>
+            <p class="lead desc">We provide ice that cool you down</p>
+        </div>
+    </div>
+
+    <div class="product-div mx-auto">
+        <div class="jumbotron jumbotron-fluid hero-section2 text-center text-uppercase"
+            style="height:10vh; display: flex; align-items: center;">
+            <div class="container">
+                <h1 class="display-4 topic">What we do</h1>
+                <p class="lead desc">Manufacturer & distributor of edible ice</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col card text-center product-card">
+                <div>
+                    <div class="product-img-section"><img src="./img/block_ice.png" class="product-img"></div>
+                    <h3 class="font-weight-normal text-uppercase topic">Block ice</h3>
+                    <h5 class="font-weight-lighter">Block ice supply comes with varieties of sizes and weights</h5>
+                </div>
+            </div>
+            <div class="col card text-center product-card">
+                <div>
+                    <div class="product-img-section"><img src="./img/crush_ice.png" class="product-img"></div>
+                    <h3 class="font-weight-normal text-uppercase topic">Crush ice</h3>
+                    <h5 class="font-weight-lighter">Crush ice supply for your ice blended beverage</h5>
+                </div>
+            </div>
+            <div class="col card text-center product-card">
+                <div>
+                    <div class="product-img-section"><img src="./img/tube_ice.png" class="product-img"></div>
+                    <h3 class="font-weight-normal text-uppercase topic">Tube ice</h3>
+                    <h5 class="font-weight-lighter">Ready to consume tube ice supply for F&B outlets</h5>
+                </div>
+            </div>
+            <div class="col card text-center product-card">
+                <div>
+                    <div class="product-img-section"><img src="./img/baby_ice.png" class="product-img"></div>
+                    <h3 class="font-weight-normal text-uppercase topic">Baby ice</h3>
+                    <h5 class="font-weight-lighter">Ready to consume baby tube ice supply for F&B outlets</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-div">
+        <div class="jumbotron jumbotron-fluid hero-section2 text-center text-uppercase"
+            style="height:10vh; display: flex; align-items: center;">
+            <div class="container" style="color: white;">
+                <h1 class="display-4 topic">Services</h1>
+                <p class="lead desc">We provide ice and delivery service</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center service-card">
+                <div>
+                    <div class="service-img-section"><img src="./img/ice_supply.png" class="service-img"></div>
+                    <h3 class="font-weight-normal text-uppercase topic">Ice supply</h3>
+                    <h5 class="font-weight-lighter">Our ice are certified Halal and MeSTI, we always ensure the ice is save to consume</h5>
+                </div>
+            </div>
+            <div class="col text-center service-card">
+                <div>
+                    <div class="service-img-section"><img src="./img/delivery.jpeg" class="service-img"></div>
+                    <h3 class="font-weight-normal text-uppercase topic">Delivery</h3>
+                    <h5 class="font-weight-lighter">We delivery across Klang area</h5>
+                </div>
+            </div>
+            <div class="col text-center service-card">
+                <div>
+                    <div class="service-img-section"><img src="./img/customer_service.jpg" class="service-img"></div>
+                    <h3 class="font-weight-normal text-uppercase topic">Customer service</h3>
+                    <h5 class="font-weight-lighter">Knowleageable and responsive customer service</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
