@@ -13,13 +13,39 @@
             font-size: x-large;
         }
 
-        .animation-header1 {
+        .topic {
+            letter-spacing: 6px;
+        }
+
+        .desc {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .section1,
+        .section-2 {
+            padding: 32px 0;
+        }
+
+        .section-3,
+        .section-4 {
+            padding: 64px 64px 64px 64px;
+        }
+
+        .hero-section-1 {
+            color: white;
+            background-position: 0px 0px, 50% 50%;
+            background-size: auto, cover;
+            background-image: linear-gradient(180deg, rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22)), url(./img/hero-bg.jpg);
+            border-bottom: 4px solid #69b9ff;
+        }
+
+        .section-1-animation-1 {
             animation-name: example;
             animation-duration: 2s;
             animation-delay: 1s;
         }
 
-        .animation-header2 {
+        .section-1-animation-2 {
             animation-name: example;
             animation-duration: 3s;
             animation-delay: 1s;
@@ -37,42 +63,25 @@
             }
         }
 
-        .topic {
-            letter-spacing: 5px;
+        .section-2 {
+            width: 70%;
         }
 
-        .desc {
-            font-family: 'Roboto Mono', monospace;
-        }
-
-        .hero-section {
-            color: white;
-            background-position: 0px 0px, 50% 50%;
-            background-size: auto, cover;
-            background-image: linear-gradient(180deg, rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22)), url(./img/hero-bg.jpg);
-            border-bottom: 4px solid #69b9ff;
-        }
-
-        .hero-section2 {
+        .hero-section-2 {
             color: steelblue;
             background-color: transparent;
         }
 
-        .product-div {
-            width: 70%;
-            margin-bottom: 32px;
-        }
-
-        .product-card {
+        .section-2-product-card {
             color: steelblue;
-            margin: 16px;
-            padding: 32px;
+            margin: 0px 16px;
+            padding: 0px 32px;
         }
 
-        .product-img-section {
+        .section-2-product-img {
             background-color: rgba(46, 157, 255, 0.7);
             border-radius: 2cm;
-            margin: 10%;
+            margin: 16px;
         }
 
         .product-img {
@@ -80,59 +89,84 @@
             padding: 8px;
         }
 
-        .service-div {
+        .section-3 {
             background-color: rgba(46, 157, 255, 0.7);
-            padding: 32px 10% 0 10%;
         }
 
-        .service-card {
+        .hero-section-3 {
             color: white;
-            margin: 8px;
-            padding: 0 32px;
+            background-color: transparent;
+        }
+
+        .section-3-service-card {
+            color: white;
+            margin: 0px 16px;
         }
 
         .service-img {
-            width: 80%;
-            padding: 8px;
+            width: 60%;
             margin-bottom: 16px;
+        }
+
+        .section-4-factory-btn {
+            width: 200px;
+            display: block;
+            margin: 16px auto;
+        }
+
+        .factory-img {
+            width: 720px;
+        }
+
+        .btn-contact {
+            width: 300px;
+            display: block;
+            margin: auto;
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-xl">
-            <a class="navbar-brand" href="#"><img src="./img/Logo.png" class="logo" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="nav justify-content-end">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-xl">
+                <a class="navbar-brand" href="#"><img src="./img/Logo.png" class="logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="nav justify-content-end">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
-    <div class="jumbotron jumbotron-fluid hero-section text-center text-uppercase"
-        style="height:40vh; display: flex; align-items: center;">
-        <div class="container">
-            <h1 class="display-3 topic animation-header1">This is ice factory</h1>
-            <p class="lead desc animation-header2">We provide ice that cool you down</p>
+    <div class="section-1">
+        <div class="jumbotron jumbotron-fluid hero-section-1 text-center text-uppercase"
+            style="height:40vh; display: flex; align-items: center;">
+            <div class="container">
+                <h1 class="display-3 topic section-1-animation-1">This is ice factory</h1>
+                <p class="lead desc section-1-animation-2">We provide ice that cool you down</p>
+                <button class="btn btn-primary btn-lg btn-contact" data-toggle="modal" data-target="#contactUs">Contact
+                    us</button>
+            </div>
         </div>
     </div>
 
-    <div class="product-div mx-auto">
-        <div class="jumbotron jumbotron-fluid hero-section2 text-center text-uppercase"
+    <div class="section-2 mx-auto">
+        <div class="jumbotron jumbotron-fluid hero-section-2 text-center text-uppercase"
             style="height:10vh; display: flex; align-items: center;">
             <div class="container">
                 <h1 class="display-4 topic">What we do</h1>
@@ -141,29 +175,29 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-6 col-xl-3">
-                <div class="card text-center product-card">
-                    <div class="product-img-section"><img src="./img/block_ice.png" class="product-img"></div>
+                <div class="card text-center section-2-product-card">
+                    <div class="section-2-product-img"><img src="./img/block_ice.png" class="product-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Block ice</h3>
                     <h5 class="font-weight-lighter">Block ice supply comes with varieties of sizes and weights</h5>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3">
-                <div class="card text-center product-card">
-                    <div class="product-img-section"><img src="./img/crush_ice.png" class="product-img"></div>
+                <div class="card text-center section-2-product-card">
+                    <div class="section-2-product-img"><img src="./img/crush_ice.png" class="product-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Crush ice</h3>
                     <h5 class="font-weight-lighter">Crush ice supply for your ice blended beverage</h5>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3">
-                <div class="card text-center product-card">
-                    <div class="product-img-section"><img src="./img/tube_ice.png" class="product-img"></div>
+                <div class="card text-center section-2-product-card">
+                    <div class="section-2-product-img"><img src="./img/tube_ice.png" class="product-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Tube ice</h3>
                     <h5 class="font-weight-lighter">Ready to consume tube ice supply for F&B outlets</h5>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3">
-                <div class="card text-center product-card">
-                    <div class="product-img-section"><img src="./img/baby_ice.png" class="product-img"></div>
+                <div class="card text-center section-2-product-card">
+                    <div class="section-2-product-img"><img src="./img/baby_ice.png" class="product-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Baby ice</h3>
                     <h5 class="font-weight-lighter">Ready to consume baby tube ice supply for F&B outlets</h5>
                 </div>
@@ -171,33 +205,33 @@
         </div>
     </div>
 
-    <div class="service-div">
-        <div class="jumbotron jumbotron-fluid hero-section2 text-center text-uppercase"
+    <div class="section-3">
+        <div class="jumbotron jumbotron-fluid hero-section-3 text-center text-uppercase"
             style="height:10vh; display: flex; align-items: center;">
-            <div class="container" style="color: white;">
+            <div class="container">
                 <h1 class="display-4 topic">Services</h1>
                 <p class="lead desc">We provide ice and delivery service</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-6 col-xl-3 text-center service-card">
-                <div>
-                    <div class="service-img-section"><img src="./img/ice_supply.png" class="service-img"></div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="text-center section-3-service-card">
+                    <div class="section-3-service-img"><img src="./img/ice_supply.png" class="service-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Ice supply</h3>
                     <h5 class="font-weight-lighter">Our ice are certified Halal and MeSTI, we always ensure the ice is
                         save to consume</h5>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-3 text-center service-card">
-                <div>
-                    <div class="service-img-section"><img src="./img/delivery.jpg" class="service-img"></div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="text-center section-3-service-card">
+                    <div class="section-3-service-img"><img src="./img/delivery.jpg" class="service-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Delivery</h3>
                     <h5 class="font-weight-lighter">We delivery across Klang area</h5>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-xl-3 text-center service-card">
-                <div>
-                    <div class="service-img-section"><img src="./img/customer_service.jpg" class="service-img"></div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="text-center section-3-service-card">
+                    <div class="section-3-service-img"><img src="./img/customer_service.jpg" class="service-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Customer service</h3>
                     <h5 class="font-weight-lighter">Knowleageable and responsive customer service</h5>
                 </div>
@@ -205,15 +239,110 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <div class="section-4">
+        <div class="jumbotron jumbotron-fluid hero-section-2 text-center text-uppercase"
+            style="height:10vh; display: flex; align-items: center;">
+            <div class="container">
+                <h1 class="display-4 topic">Our factory</h1>
+                <p class="lead desc">Ice factory that supply all the ice you need</p>
+            </div>
+        </div>
+        <div class="container section-4-factory-div">
+            <div class="btn-group btn-group-toggle d-flex justify-content-center section-4-factory-btn" data-toggle="buttons">
+                <button onclick="showDiv('factory')" class="btn btn-primary btn-lg active section-4-button"
+                    role="button" aria-pressed="true">Factory</button>
+                <button onclick="showDiv('truck')" class="btn btn-primary btn-lg active section-4-button"
+                    role="button" aria-pressed="true">Truck</button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div id="factory" class="section-4-factory-img"><img src="./img/factory.jpeg" class="factory-img"></div>
+                <div id="truck" class="section-4-factory-img" style="display: none;"><img src="./img/delivery.jpg"
+                        class="factory-img"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-5">
+
+    </div>
+
+
+    <div class="modal fade" id="contactUs" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactUsLabel">Contact us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group form-check ">
+                                    <input class="form-check-input" type="checkbox" id="blockIce">
+                                    <label class="form-check-label" for="blockIce">Block Ice</label>
+                                </div>
+                                <div class="form-group form-check ">
+                                    <input class="form-check-input" type="checkbox" id="crushIce">
+                                    <label class="form-check-label" for="crushIce">Crush Ice</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-check ">
+                                    <input class="form-check-input" type="checkbox" id="tubeIce">
+                                    <label class="form-check-label" for="tubeIce">Tube Ice</label>
+                                </div>
+                                <div class="form-group form-check ">
+                                    <input class="form-check-input" type="checkbox" id="babyIce">
+                                    <label class="form-check-label" for="babyIce">Baby Ice</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName4">Name</label>
+                                <input type="text" class="form-control" id="inputName4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputContact">Contact No.</label>
+                            <input type="text" class="form-control" id="inputContact" placeholder="+601X-XXXXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Jalan ABC">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+
+    <script>
+        function showDiv(div) {
+            $(".section-4-factory-img").hide();
+            $('#' + div).fadeIn();
+        }
+    </script>
 </body>
 
 </html>
