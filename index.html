@@ -108,6 +108,10 @@
             margin-bottom: 16px;
         }
 
+        .section-4-factory-div2{
+            color: steelblue;
+        }
+
         .section-4-factory-btn {
             width: 200px;
             display: block;
@@ -122,6 +126,54 @@
             width: 300px;
             display: block;
             margin: auto;
+        }
+
+        .footer{
+            background-color: rgba(46, 157, 255, 0.7);
+        }
+
+        .footer-div{
+            width: 1080px;
+            display: block;
+            margin: auto;
+            padding: 32px;
+        }
+
+        .about-div{
+            padding-bottom: 8px;
+        }
+
+        .about-img{
+            width: 25%;
+        }
+
+        .about-img2{
+            height: 50px;
+            float: left;
+            margin-right: 8px;
+        }
+
+        .flaticon{
+            height: 20px;
+            margin: 8px;
+        }
+
+        .contact-us a{
+            color: #212529;
+        }
+        
+        .contact-us a:hover{
+            color: gray;
+            text-decoration: none;
+        }
+
+        .copyright{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            color: white;
+            background-color: steelblue;
+            margin: 0px;
+            padding: 16px;
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -248,22 +300,75 @@
             </div>
         </div>
         <div class="container section-4-factory-div">
-            <div class="btn-group btn-group-toggle d-flex justify-content-center section-4-factory-btn" data-toggle="buttons">
+            <div class="btn-group btn-group-toggle d-flex justify-content-center section-4-factory-btn"
+                data-toggle="buttons">
                 <button onclick="showDiv('factory')" class="btn btn-primary btn-lg active section-4-button"
                     role="button" aria-pressed="true">Factory</button>
-                <button onclick="showDiv('truck')" class="btn btn-primary btn-lg active section-4-button"
-                    role="button" aria-pressed="true">Truck</button>
+                <button onclick="showDiv('truck')" class="btn btn-primary btn-lg active section-4-button" role="button"
+                    aria-pressed="true">Truck</button>
             </div>
-            <div class="d-flex justify-content-center">
-                <div id="factory" class="section-4-factory-img"><img src="./img/factory.jpeg" class="factory-img"></div>
-                <div id="truck" class="section-4-factory-img" style="display: none;"><img src="./img/delivery.jpg"
-                        class="factory-img"></div>
+            <div class="d-flex justify-content-center section-4-factory-div2 text-center">
+                <div id="factory" class="section-4-factory-img">
+                    <img src="./img/factory.jpeg" class="factory-img">
+                    <h3 class="font-weight-normal text-uppercase topic">AB Ice Factory</h3>
+                    <h5 class="font-weight-lighter">Our Halal and MeSTI certified factory, we ensure to provide you and ready to consume ice</h5>
+                </div>
+                <div id="truck" class="section-4-factory-img" style="display: none;">
+                    <img src="./img/delivery.jpg" class="factory-img">
+                    <h3 class="font-weight-normal text-uppercase topic">AB Ice delivery truck</h3>
+                    <h5 class="font-weight-lighter">Our coolest truck in the town, we travel all the way in Klang</h5>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="section-5">
-
+    <div class="footer">
+        <div class="footer-div">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row about-div">
+                        <div class="col"><h3 class="font-weight-normal text-uppercase topic">About</h3></div>
+                    </div>
+                    <div class="row about-div">
+                        <div class="col"><img src="./img/Logo.png" class="about-img"></div>
+                    </div>
+                    <div class="row about-div">
+                        <div class="col"><span>Manufacturer and Distributor of Ice</span></div>
+                    </div>
+                    <div class="row about-div">
+                        <div class="col">
+                            <img src="./img/Halal.png" class="about-img2">
+                            <img src="./img/Mesti.png" class="about-img2">
+                            <img src="./img/KKM.png" class="about-img2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row about-div">
+                        <div class="col"><h3 class="font-weight-normal text-uppercase topic">Contact</h3></div>
+                    </div>
+                    <div class="row about-div contact-us">
+                        <div class="col"><img src="./img/fb.svg" class="flaticon"><a href="https://www.facebook.com/AB-ICE-supply-1650699355257006/">Facebook</a></div>
+                    </div>
+                    <div class="row about-div contact-us">
+                        <div class="col"><img src="./img/email.svg" class="flaticon"><a href="mailto: aisbukit@gmail.com" data-toggle="modal" data-target="#contactUs">aisbukit@gmail.com</a></div>
+                    </div>
+                    <div class="row about-div contact-us">
+                        <div class="col"><img src="./img/call.svg" class="flaticon">
+                            <a href="https://wa.me/60192596229?text=I'm%20interested%20in%20purchasing%20your%20ice">019-259 6229</a>
+                            <span>/</span>
+                            <a href="https://wa.me/60189833530?text=I'm%20interested%20in%20purchasing%20your%20ice">018-983 3530</a>
+                        </div>
+                    </div>
+                    <div class="row about-div contact-us">
+                        <div class="col"><img src="./img/address.svg" class="flaticon"><a href="">8, Jalan Kenari 8, Bandar Puchong Jaya, 47170 Puchong, Selangor</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <span>Copyright © <span id="year"></span> · All Rights Reserved · AB ICE · Ice Supplies</span>
+        </div>
     </div>
 
 
@@ -342,6 +447,13 @@
             $(".section-4-factory-img").hide();
             $('#' + div).fadeIn();
         }
+
+
+        $(document).ready(function () {
+            var d = new Date();
+            var n = d.getFullYear();
+            $("#year").html(n);
+        });
     </script>
 </body>
 
