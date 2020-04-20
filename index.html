@@ -9,6 +9,10 @@
             width: 50%;
         }
 
+        .logo2 {
+            width: 30%;
+        }
+
         .nav {
             font-size: x-large;
         }
@@ -32,7 +36,7 @@
         }
 
         .hero-section-1 {
-            color: white;
+            color: steelblue;
             background-position: 0px 0px, 50% 50%;
             background-size: auto, cover;
             background-image: linear-gradient(180deg, rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22)), url(./img/hero-bg.jpg);
@@ -74,8 +78,9 @@
 
         .section-2-product-card {
             color: steelblue;
-            margin: 0px 16px;
+            margin: 16px;
             padding: 0px 32px;
+            min-height: 336px;
         }
 
         .section-2-product-img {
@@ -100,7 +105,7 @@
 
         .section-3-service-card {
             color: white;
-            margin: 0px 16px;
+            margin: 16px 16px;
         }
 
         .service-img {
@@ -108,7 +113,7 @@
             margin-bottom: 16px;
         }
 
-        .section-4-factory-div2{
+        .section-4-factory-div2 {
             color: steelblue;
         }
 
@@ -128,52 +133,69 @@
             margin: auto;
         }
 
-        .footer{
+        .footer {
             background-color: rgba(46, 157, 255, 0.7);
         }
 
-        .footer-div{
-            width: 1080px;
+        .footer-div {
+            width: 70%;
             display: block;
             margin: auto;
             padding: 32px;
         }
 
-        .about-div{
+        .about-div {
             padding-bottom: 8px;
+            margin: 16px;
         }
 
-        .about-img{
+        .about-img {
             width: 25%;
         }
 
-        .about-img2{
+        .about-img2 {
             height: 50px;
             float: left;
             margin-right: 8px;
         }
 
-        .flaticon{
+        .flaticon {
             height: 20px;
             margin: 8px;
         }
 
-        .contact-us a{
+        .contact-us a {
             color: #212529;
         }
-        
-        .contact-us a:hover{
+
+        .contact-us a:hover {
             color: gray;
             text-decoration: none;
         }
 
-        .copyright{
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        .copyright {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 12px;
             color: white;
             background-color: steelblue;
             margin: 0px;
             padding: 16px;
+        }
+
+        body {
+            font-weight: bold;
+        }
+
+        @media screen and (min-width: 601px) {
+            .lead {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .lead {
+                font-size: 100px;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -193,10 +215,7 @@
                     <div class="nav justify-content-end">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
                             </li>
                         </ul>
                     </div>
@@ -209,8 +228,9 @@
         <div class="jumbotron jumbotron-fluid hero-section-1 text-center text-uppercase"
             style="height:40vh; display: flex; align-items: center;">
             <div class="container">
-                <h1 class="display-3 topic section-1-animation-1">This is ice factory</h1>
-                <p class="lead desc section-1-animation-2">We provide ice that cool you down</p>
+                <h1 class="display-3 topic section-1-animation-1"><img src="./img/Logo.png" class="logo2" /></h1>
+                <p class="lead desc section-1-animation-2" style="font-weight: bold;">Manufacturer & distributor of
+                    edible ice</p>
                 <button class="btn btn-primary btn-lg btn-contact" data-toggle="modal" data-target="#contactUs">Contact
                     us</button>
             </div>
@@ -222,7 +242,7 @@
             style="height:10vh; display: flex; align-items: center;">
             <div class="container">
                 <h1 class="display-4 topic">What we do</h1>
-                <p class="lead desc">Manufacturer & distributor of edible ice</p>
+                <p class="lead desc">We provide ice that cool you down</p>
             </div>
         </div>
         <div class="row">
@@ -230,7 +250,7 @@
                 <div class="card text-center section-2-product-card">
                     <div class="section-2-product-img"><img src="./img/block_ice.png" class="product-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Block ice</h3>
-                    <h5 class="font-weight-lighter">Block ice supply comes with varieties of sizes and weights</h5>
+                    <h5 class="font-weight-lighter">Block ice supply comes with varieties of sizes</h5>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-3">
@@ -271,14 +291,14 @@
                     <div class="section-3-service-img"><img src="./img/ice_supply.png" class="service-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Ice supply</h3>
                     <h5 class="font-weight-lighter">Our ice are certified Halal and MeSTI, we always ensure the ice is
-                        save to consume</h5>
+                        clean and most important safe for human consumption</h5>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
                 <div class="text-center section-3-service-card">
                     <div class="section-3-service-img"><img src="./img/delivery.jpg" class="service-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Delivery</h3>
-                    <h5 class="font-weight-lighter">We delivery across Klang area</h5>
+                    <h5 class="font-weight-lighter">365 days delivery to all occassions</h5>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
@@ -311,12 +331,13 @@
                 <div id="factory" class="section-4-factory-img">
                     <img src="./img/factory.jpeg" class="factory-img">
                     <h3 class="font-weight-normal text-uppercase topic">AB Ice Factory</h3>
-                    <h5 class="font-weight-lighter">Our Halal and MeSTI certified factory, we ensure to provide you and ready to consume ice</h5>
+                    <h5 class="font-weight-lighter">Our Halal and MeSTI certified factory, we ensure to provide you and
+                        ready to consume ice</h5>
                 </div>
                 <div id="truck" class="section-4-factory-img" style="display: none;">
                     <img src="./img/delivery.jpg" class="factory-img">
                     <h3 class="font-weight-normal text-uppercase topic">AB Ice delivery truck</h3>
-                    <h5 class="font-weight-lighter">Our coolest truck in the town, we travel all the way in Klang</h5>
+                    <h5 class="font-weight-lighter">Our coolest truck in the town</h5>
                 </div>
             </div>
         </div>
@@ -325,15 +346,17 @@
     <div class="footer">
         <div class="footer-div">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-12 col-lg-6">
                     <div class="row about-div">
-                        <div class="col"><h3 class="font-weight-normal text-uppercase topic">About</h3></div>
+                        <div class="col">
+                            <h3 class="font-weight-normal text-uppercase topic">About</h3>
+                        </div>
                     </div>
                     <div class="row about-div">
                         <div class="col"><img src="./img/Logo.png" class="about-img"></div>
                     </div>
                     <div class="row about-div">
-                        <div class="col"><span>Manufacturer and Distributor of Ice</span></div>
+                        <div class="col"><span>Manufacturer and Distributor of Edible Ice</span></div>
                     </div>
                     <div class="row about-div">
                         <div class="col">
@@ -343,25 +366,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-12 col-lg-6">
                     <div class="row about-div">
-                        <div class="col"><h3 class="font-weight-normal text-uppercase topic">Contact</h3></div>
-                    </div>
-                    <div class="row about-div contact-us">
-                        <div class="col"><img src="./img/fb.svg" class="flaticon"><a href="https://www.facebook.com/AB-ICE-supply-1650699355257006/">Facebook</a></div>
-                    </div>
-                    <div class="row about-div contact-us">
-                        <div class="col"><img src="./img/email.svg" class="flaticon"><a href="mailto: aisbukit@gmail.com" data-toggle="modal" data-target="#contactUs">aisbukit@gmail.com</a></div>
-                    </div>
-                    <div class="row about-div contact-us">
-                        <div class="col"><img src="./img/call.svg" class="flaticon">
-                            <a href="https://wa.me/60192596229?text=I'm%20interested%20in%20purchasing%20your%20ice">019-259 6229</a>
-                            <span>/</span>
-                            <a href="https://wa.me/60189833530?text=I'm%20interested%20in%20purchasing%20your%20ice">018-983 3530</a>
+                        <div class="col">
+                            <h3 class="font-weight-normal text-uppercase topic">Contact</h3>
                         </div>
                     </div>
                     <div class="row about-div contact-us">
-                        <div class="col"><img src="./img/address.svg" class="flaticon"><a href="">8, Jalan Kenari 8, Bandar Puchong Jaya, 47170 Puchong, Selangor</a></div>
+                        <div class="col-1"><img src="./img/email.svg" class="flaticon"></div>
+                        <div class="col-11" style="display:flex"><a href="mailto: aisbukit@gmail.com"
+                                data-toggle="modal" data-target="#contactUs"
+                                style="align-self:center">aisbukit@gmail.com</a></div>
+                    </div>
+                    <div class="row about-div contact-us">
+                        <div class="col-1"><img src="./img/call.svg" class="flaticon"></div>
+                        <div class="col-11" style="display:flex">
+                            <div style="align-self:center"><a
+                                    href="https://wa.me/60192596229?text=I'm%20interested%20in%20purchasing%20your%20ice">019-259
+                                    6229</a>
+                                <span>/</span>
+                                <a
+                                    href="https://wa.me/60189833530?text=I'm%20interested%20in%20purchasing%20your%20ice">018-983
+                                    3530</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row about-div contact-us">
+                        <div class="col-1"><img src="./img/address.svg" class="flaticon"></div>
+                        <div class="col-11" style="display:flex"><a href="" style="align-self:center">No. 2, Jalan TK
+                                5/44, Kinrara Industrial Park, Jalan Puchong Selangor, Malaysia</a></div>
                     </div>
                 </div>
             </div>
@@ -422,6 +455,11 @@
                         <div class="form-group">
                             <label for="inputAddress">Address</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Jalan ABC">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputRemarks">Remarks</label>
+                            <input type="text" class="form-control" id="inputRemarks"
+                                placeholder="Quantity, Date, others">
                         </div>
                     </form>
                 </div>
