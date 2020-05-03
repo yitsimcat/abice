@@ -4,9 +4,9 @@
       <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         body{
             min-width: 800px;
@@ -25,6 +25,7 @@
         }
 
         .topic {
+            font-family: 'Roboto Mono', monospace;
             letter-spacing: 6px;
         }
 
@@ -209,43 +210,25 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-xl">
                 <a class="navbar-brand" href="#"><img src="./img/Logo.png" class="logo" /></a>
-                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
-                <!-- <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="nav justify-content-end">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
         </nav>
     </div>
 
     <div class="section-1">
-        <div class="jumbotron jumbotron-fluid hero-section-1 text-center text-uppercase"
-            style="height:40vh; display: flex; align-items: center;">
+        <div class="jumbotron jumbotron-fluid hero-section-1 text-center text-uppercase" style="height:40vh; display: flex; align-items: center;">
             <div class="container">
-                <h1 class="display-3 topic section-1-animation-1"><img src="./img/Logo.png" class="logo2" /></h1>
-                <p class="lead desc section-1-animation-2" style="font-weight: bold;">Manufacturer & distributor of
-                    edible ice</p>
-                <button class="btn btn-primary btn-lg btn-contact" data-toggle="modal" data-target="#contactUs">Contact
-                    us</button>
+                <h1 class="section-1-animation-1"><img src="./img/Logo.png" class="logo2" /></h1>
+                <h4 class="section-1-animation-2 desc">Manufacturer & distributor of edible ice</h4>
+                <button class="btn btn-primary btn-lg btn-contact" data-toggle="modal" data-target="#contactUs">Contact us</button>
             </div>
         </div>
     </div>
 
     <div class="section-2 mx-auto">
-        <div class="jumbotron jumbotron-fluid hero-section-2 text-center text-uppercase"
-            style="height:10vh; display: flex; align-items: center;">
+        <div class="jumbotron jumbotron-fluid hero-section-2 text-center text-uppercase" style="height:10vh; display: flex; align-items: center;">
             <div class="container">
-                <h1 class="display-4 topic">What we do</h1>
-                <p class="lead desc">We provide ice that cool you down</p>
+                <h1 class="topic">What we do</h1>
+                <h4 class="desc">We provide ice that cool you down</h4>
             </div>
         </div>
         <div class="row">
@@ -284,8 +267,8 @@
         <div class="jumbotron jumbotron-fluid hero-section-3 text-center text-uppercase"
             style="height:10vh; display: flex; align-items: center;">
             <div class="container">
-                <h1 class="display-4 topic">Services</h1>
-                <p class="lead desc">We provide ice and delivery service</p>
+                <h1 class="topic">Services</h1>
+                <h4 class="desc">We provide ice and delivery service</h4>
             </div>
         </div>
         <div class="row">
@@ -293,8 +276,7 @@
                 <div class="text-center section-3-service-card">
                     <div class="section-3-service-img"><img src="./img/ice_supply.png" class="service-img"></div>
                     <h3 class="font-weight-normal text-uppercase topic">Ice supply</h3>
-                    <h5 class="font-weight-lighter">Our ice are certified Halal and MeSTI, we always ensure the ice is
-                        clean and most important safe for human consumption</h5>
+                    <h5 class="font-weight-lighter">Our ice are certified Halal and MeSTI, we always ensure the ice is clean and most important safe for human consumption</h5>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-xl-4">
@@ -318,8 +300,8 @@
         <div class="jumbotron jumbotron-fluid hero-section-2 text-center text-uppercase"
             style="height:10vh; display: flex; align-items: center;">
             <div class="container">
-                <h1 class="display-4 topic">Our factory</h1>
-                <p class="lead desc">Ice factory that supply all the ice you need</p>
+                <h1 class="topic">Our factory</h1>
+                <h4 class="desc">Ice factory that supply all the ice you need</h4>
             </div>
         </div>
         <div class="container section-4-factory-div">
@@ -332,14 +314,13 @@
                     <label class="btn btn-primary btn-lg">
                       <input class="section-4-button" type="radio" name="options" id="option2" onclick="showDiv('truck')">Truck
                     </label>
-                  </div>
+                </div>
             </div>
             <div class="d-flex justify-content-center section-4-factory-div2 text-center">
                 <div id="factory" class="section-4-factory-img">
                     <img src="./img/factory.jpeg" class="factory-img">
                     <h3 class="font-weight-normal text-uppercase topic">AB Ice Factory</h3>
-                    <h5 class="font-weight-lighter">Our Halal and MeSTI certified factory, we ensure to provide you and
-                        ready to consume ice</h5>
+                    <h5 class="font-weight-lighter">Our Halal and MeSTI certified factory, we ensure to provide you and ready to consume ice</h5>
                 </div>
                 <div id="truck" class="section-4-factory-img" style="display: none;">
                     <img src="./img/delivery.jpg" class="factory-img">
@@ -356,7 +337,7 @@
                 <div class="col-12 col-md-12 col-lg-6">
                     <div class="row about-div">
                         <div class="col">
-                            <h3 class="font-weight-normal text-uppercase topic">About</h3>
+                            <h2 class="font-weight-normal text-uppercase topic">About</h2>
                         </div>
                     </div>
                     <div class="row about-div">
@@ -376,13 +357,14 @@
                 <div class="col-12 col-md-12 col-lg-6">
                     <div class="row about-div">
                         <div class="col">
-                            <h3 class="font-weight-normal text-uppercase topic">Contact</h3>
+                            <h2 class="font-weight-normal text-uppercase topic">Contact</h2>
                         </div>
                     </div>
                     <div class="row about-div contact-us">
                         <div class="col-1"><img src="./img/email.svg" class="flaticon"></div>
                         <div class="col-11" style="display:flex">
-                            <a href="mailto: aisbukit@gmail.com" data-toggle="modal" data-target="#contactUs" style="align-self:center">aisbukit@gmail.com</a></div>
+                            <a href="mailto: aisbukit@gmail.com" data-toggle="modal" data-target="#contactUs" style="align-self:center">aisbukit@gmail.com</a>
+                        </div>
                     </div>
                     <div class="row about-div contact-us">
                         <div class="col-1"><img src="./img/call.svg" class="flaticon"></div>
@@ -422,7 +404,6 @@
             <span>Copyright © <span id="year"></span> · All Rights Reserved · AB ICE · Ice Supplies</span>
         </div>
     </div>
-
 
     <div class="modal fade" id="contactUs" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -495,7 +476,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-
     <script>
         function showDiv(div) {
             $(".section-4-factory-img").hide();
@@ -513,7 +493,6 @@
             var n = d.getFullYear();
             $("#year").html(n);
         });
-    
     </script>
 </body>
 
